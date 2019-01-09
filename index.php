@@ -1,3 +1,4 @@
+<?php include 'db.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,15 +24,37 @@
 
 
         </tr>
+                      <!-- Read part Start -->
+        <?php 
+$db = new Database();
+$query= "select *from stu_info";
+$read = $db->select($query);
+if($read){
+
+    while($pri=$read->fetch_assoc()){
+        ?>
+                      <!--Read part end -->
         <tr>
-            <td>Name</td>
-            <td>Class</td>
-            <td>Result</td>
-            <td>Email</td>
+
+            <td><?php echo $pri['id']; ?></td>
+            <td><?php echo $pri['name']; ?></td>
+            <td><?php echo $pri['class']; ?></td>
+            <td><?php echo $pri['result']; ?></td>
 
 
         </tr>
+ 
+        <!--Else part Start -->
+
+          <?php 
+         }
+      }else {
+
+      }
+   ?>
+        <!--Else part End -->   
         </table>
+   
     </div>
 </body>
 </html>
