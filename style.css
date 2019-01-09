@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    height: 70px;
+    width: 100%;
+    background: #efefe4;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.tbl{
+    width:75%;
+    margin-left:140px;
+}
+td{
+ padding: 7px 78px;
+ border: 1px solid red;
+ text-align: center;
+ background: green;
+ color: azure;
+
+}
