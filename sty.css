@@ -1,0 +1,21 @@
+.tbl{
+    width: 75%;
+    margin-left:0 auto;
+}
+
+
+.btn{
+   
+}
+.btn a{
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background: rgb(216, 198, 198);
+    width: 50px;
+    border-radius:10px;
+}
+.btn:hover{
+    background: rgb(78, 69, 69); 
+    color:green; 
+}

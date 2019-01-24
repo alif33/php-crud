@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>crud system</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="sty.css">
 </head>
 <body>
     <h1>Our CRUD System</h1>
@@ -20,6 +21,8 @@
             <td>Name</td>
             <td>Class</td>
             <td>Result</td>
+            <td>Action</td>
+            <td>Remove</td>
             
 
 
@@ -40,7 +43,8 @@ if($read){
             <td><?php echo $pri['name']; ?></td>
             <td><?php echo $pri['class']; ?></td>
             <td><?php echo $pri['result']; ?></td>
-
+            <td> <a href="update.php?id=<?php echo $pri['id']; ?>">Update</a></td>
+            <td> <a href="delete.php?id=<?php echo $pri['id']; ?>">Delete</a></td>
 
         </tr>
  
@@ -53,7 +57,11 @@ if($read){
       }
    ?>
         <!--Else part End -->   
-        </table>
+        </table> 
+        <div class="btn">
+        <a href="insert.php">Create</a>
+        </div>
+       
    
     </div>
 </body>
